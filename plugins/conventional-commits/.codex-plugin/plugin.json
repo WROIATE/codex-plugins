@@ -1,20 +1,31 @@
 {
   "name": "conventional-commits",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "description": "Create, review, and validate Git commit messages using Conventional Commits 1.0.0.",
   "author": {
-    "name": "Local developer"
+    "name": "WROIATE",
+    "url": "https://github.com/WROIATE"
   },
+  "homepage": "https://github.com/WROIATE/codex-plugins/tree/main/plugins/conventional-commits",
+  "repository": "https://github.com/WROIATE/codex-plugins",
+  "keywords": [
+    "codex",
+    "plugin",
+    "git",
+    "commit",
+    "conventional-commits"
+  ],
   "skills": "./skills/",
   "interface": {
     "displayName": "Conventional Commits",
     "shortDescription": "Write structured Git commit messages.",
     "longDescription": "Create, review, rewrite, and validate Git commit messages according to the Conventional Commits 1.0.0 specification, including type, scope, breaking-change markers, body, and footer guidance.",
-    "developerName": "Local developer",
+    "developerName": "WROIATE",
     "category": "Productivity",
     "capabilities": [
       "Write"
     ],
+    "websiteURL": "https://github.com/WROIATE/codex-plugins/tree/main/plugins/conventional-commits",
     "defaultPrompt": [
       "Write a conventional commit message for my staged changes.",
       "Review this commit message for Conventional Commits."
