@@ -1,0 +1,4 @@
+interface:
+  display_name: "Conventional Commits"
+  short_description: "Standardize Git commit messages"
+  default_prompt: "Use $conventional-commits to write or review a Git commit message."

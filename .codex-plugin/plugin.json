@@ -1,0 +1,23 @@
+{
+  "name": "conventional-commits",
+  "version": "0.1.0",
+  "description": "Create, review, and validate Git commit messages using Conventional Commits 1.0.0.",
+  "author": {
+    "name": "Local developer"
+  },
+  "skills": "./skills/",
+  "interface": {
+    "displayName": "Conventional Commits",
+    "shortDescription": "Write structured Git commit messages.",
+    "longDescription": "Create, review, rewrite, and validate Git commit messages according to the Conventional Commits 1.0.0 specification, including type, scope, breaking-change markers, body, and footer guidance.",
+    "developerName": "Local developer",
+    "category": "Productivity",
+    "capabilities": [
+      "Write"
+    ],
+    "defaultPrompt": [
+      "Write a conventional commit message for my staged changes.",
+      "Review this commit message for Conventional Commits."
+    ]
+  }
+}
