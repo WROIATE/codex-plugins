@@ -12,7 +12,7 @@ rewriting, and validating Git commit messages according to Conventional Commits
 Add this marketplace:
 
 ```bash
-codex plugin marketplace add WROIATE/conventional-commits-codex-plugin
+codex plugin marketplace add WROIATE/codex-plugins
 ```
 
 Install the plugin:
