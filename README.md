@@ -1,31 +1,41 @@
-# Conventional Commits Codex Plugin
+# WROIATE Codex Plugin Marketplace
 
-A local Codex plugin that packages the `conventional-commits` skill for creating,
-reviewing, rewriting, and validating Git commit messages according to
-Conventional Commits 1.0.0.
+This repository is a Codex plugin marketplace that publishes the
+`conventional-commits` plugin.
 
-## Contents
+The plugin packages a `conventional-commits` skill for creating, reviewing,
+rewriting, and validating Git commit messages according to Conventional Commits
+1.0.0.
 
-- `.codex-plugin/plugin.json` - Codex plugin manifest.
-- `skills/conventional-commits/SKILL.md` - Skill instructions.
-- `skills/conventional-commits/references/conventional-commits-v1.md` - Condensed spec reference.
-- `skills/conventional-commits/scripts/validate_commit_message.py` - Commit message validator.
+## Install
 
-## Install From A Local Marketplace
-
-Add the plugin folder to a Codex marketplace entry, then install it:
+Add this marketplace:
 
 ```bash
-codex plugin add conventional-commits@personal
+codex plugin marketplace add WROIATE/conventional-commits-codex-plugin
+```
+
+Install the plugin:
+
+```bash
+codex plugin add conventional-commits@wroiate
 ```
 
 After installation, start a new Codex thread and ask for `$conventional-commits`
 when writing or reviewing commit messages.
 
+## Contents
+
+- `.agents/plugins/marketplace.json` - Codex marketplace catalog.
+- `plugins/conventional-commits/.codex-plugin/plugin.json` - Plugin manifest.
+- `plugins/conventional-commits/skills/conventional-commits/SKILL.md` - Skill instructions.
+- `plugins/conventional-commits/skills/conventional-commits/references/conventional-commits-v1.md` - Condensed spec reference.
+- `plugins/conventional-commits/skills/conventional-commits/scripts/validate_commit_message.py` - Commit message validator.
+
 ## Validate
 
 ```bash
-python3 skills/conventional-commits/scripts/validate_commit_message.py \
+python3 plugins/conventional-commits/skills/conventional-commits/scripts/validate_commit_message.py \
   "fix(api): handle empty responses"
 ```
 
