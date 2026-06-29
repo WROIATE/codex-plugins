@@ -1,13 +1,8 @@
-# WROIATE Codex Plugin Marketplace
+# WROIATE Codex Plugins
 
-This repository is a Codex plugin marketplace that publishes the
-`conventional-commits` plugin.
+This repository is a Codex plugin marketplace maintained by WROIATE.
 
-The plugin packages a `conventional-commits` skill for creating, reviewing,
-rewriting, and validating Git commit messages according to Conventional Commits
-1.0.0.
-
-## Install
+## Add Marketplace
 
 Add this marketplace:
 
@@ -15,7 +10,14 @@ Add this marketplace:
 codex plugin marketplace add WROIATE/codex-plugins
 ```
 
-Install the plugin:
+## Available Plugins
+
+### conventional-commits
+
+Create, review, rewrite, and validate Git commit messages according to
+Conventional Commits 1.0.0.
+
+Install:
 
 ```bash
 codex plugin add conventional-commits@wroiate
